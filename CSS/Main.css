@@ -1,0 +1,26 @@
+		p {font-family: arial;}
+		h1 {font-family: arial; text-align: center;}
+		h3 {font-family: arial; color: blue; text-align: center;}
+		h4 {font-family: arial;}
+		th {font-family: arial; text-align:left;}
+		tr {font-family: arial; text-align:right;}	
+		ol {font-family: arial }	
+		li {font-family: arial }
+		ul {font-family: arial }
+		#contact{font-size: 1.2em;}
+		.topics {color: blue;}
+		.section-heading {color: red;}
+
+/*	Greg's Main.css
+
+		body {
+			font-family: Verdana, Arial, sans-serif;
+			font-size: 16pt;
+			margin: 0;
+			border: 0;
+			padding: 0;
+		}
+		.menu {
+			border: 0;
+			padding: 0;
+		}  */
