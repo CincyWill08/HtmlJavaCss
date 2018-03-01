@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>	
+	<script type="text/javascript">
+
+		$().ready(function(){            //the anonymous function
+
+			var theFirst;
+			var theLast;
+
+			$("#combine").click(function(){
+				theFirst = $("#firstName").val();
+				theLast = $("#lastName").val();
+				var theCombinedName = (theFirst + " " + theLast);
+				$("#lbl").text(theCombinedName);
+			});
+
+		});
+	</script>
+</head>
+<body>	
+	First Name <input id="firstName" type="text">
+	Last Name <input id="lastName" type="text">
+	<button id="combine">Combine</button>
+	<label id="lbl"></label>
+</body> 
+</html>

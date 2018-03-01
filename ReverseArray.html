@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>	
+	<script type="text/javascript">
+
+		var integerArray = [];
+
+		$().ready(function(){            //the anonymous function
+			
+			$("#add").click(function(){
+				var nbr = $("#inp").val();
+				integerArray.push(nbr);
+				$("#lbl").text(integerArray.join(" "));
+				$("#inp").val("");
+			});
+
+			$("#reverse").click(function(){
+				$("#lbl").text(integerArray.reverse());
+				arr = [];
+			});
+
+		});
+	</script>
+</head>
+<body>	
+	<input id="inp" type="text" size=1>
+	<button id="add">Add To Array</button>
+	<button id="reverse">Display Array In Reverse</button>
+	<label id="lbl"></label>
+</body> 
+</html>

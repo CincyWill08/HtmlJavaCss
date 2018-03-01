@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>	
+	<script type="text/javascript">
+		var theNumber = 0;
+		//var inputCtrl; 
+
+		//function Main() {  //this function is started automatically
+		//	inputCtrl = document.getElementById("nbr");
+		//	display();
+		//}	
+
+		//function Increment(){
+		//	theNumber++;
+		//	display();
+		//}
+
+		//function Decrement(){
+		//	theNumber--;
+		//	display();		
+		//}
+
+
+
+		//function display(){
+		//	inputCtrl.value = theNumber;
+		//}
+
+		//jquery version
+
+		$().ready(function() {
+
+			$("#decrement").click(function(){
+			display("--theNumber");
+			});
+
+			$("#increment").click(function(){
+			display("++theNumber");
+			});
+
+		function display(number){
+			$("#nbr").val(number);
+			.css("color", "black");
+			.css("font-weight", "normal");
+			.css("font-style", "normal");
+			}
+		}
+
+	</script>
+</head>
+<body OnLoad="Main()">	
+	<div>
+		<button id="increment">Increment</button>
+		<input id="nbr" type="text" readonly size="1" value=0>
+		<button id="decrement">Decrement</button>
+    </div>
+</body> 
+</html>
